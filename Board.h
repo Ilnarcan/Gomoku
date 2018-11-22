@@ -13,10 +13,10 @@ public:
 	enum event { draw, first, second, nextTurn };
 
 	Board();
-	bool makeMove(int x, int y, enum sign);
+	bool makeMove(const int x, const int y, const enum sign);
 	int getSize();
 	event isWin();
-	sign getcell(int x, int y);
+	sign getcell(const int x, const int y);
 
 };
 

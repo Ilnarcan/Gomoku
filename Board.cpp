@@ -11,7 +11,7 @@ Board::Board() {
 
 }
 
-bool Board::makeMove(int x, int y, sign s) {
+bool Board::makeMove(const int x, const int y, const sign s) {
 	
 	// проверка на ввод дозволеных чисел
 	if ((x >= 0 && x < FIELD_SIZE) && (y >= 0 && y < FIELD_SIZE)) {
@@ -32,7 +32,7 @@ int Board::getSize() {
 	return this->FIELD_SIZE;
 }
 
-Board::sign Board::getcell(int x, int y) {
+Board::sign Board::getcell(const int x, const int y) {
 	if (b[x][y] == 0)
 		return this->H;
 	else if (b[x][y] == 1)
